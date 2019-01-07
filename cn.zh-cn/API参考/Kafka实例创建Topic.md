@@ -8,7 +8,7 @@
 
 ## URI<a name="section133368463119"></a>
 
-POST /v1.0/\{project\_id\}/instances/\{instance\_id\}/topics/
+POST /v1.0/\{project\_id\}/instances/\{instance\_id\}/topics
 
 参数说明见[表1](#table5338194611119)。
 
