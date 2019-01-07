@@ -66,9 +66,9 @@
     <p id="p885211915294"><a name="p885211915294"></a><a name="p885211915294"></a>默认值：72</p>
     </td>
     </tr>
-    <tr id="row24651137132"><td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.3.1.1 "><p id="p646518311134"><a name="p646518311134"></a><a name="p646518311134"></a><span id="ph10625133141515"><a name="ph10625133141515"></a><a name="ph10625133141515"></a>同步复制</span></p>
+    <tr id="row24651137132"><td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.3.1.1 "><p id="p646518311134"><a name="p646518311134"></a><a name="p646518311134"></a>同步复制</p>
     </td>
-    <td class="cellrowborder" valign="top" width="77%" headers="mcps1.2.3.1.2 "><p id="p74650321310"><a name="p74650321310"></a><a name="p74650321310"></a><span id="ph1753383311151"><a name="ph1753383311151"></a><a name="ph1753383311151"></a>开启同步复制后，需要在客户端配置acks=-1，否则无效。</span></p>
+    <td class="cellrowborder" valign="top" width="77%" headers="mcps1.2.3.1.2 "><p id="p74650321310"><a name="p74650321310"></a><a name="p74650321310"></a>开启同步复制后，需要在客户端配置acks=-1，否则无效。</p>
     </td>
     </tr>
     <tr id="row564184403515"><td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.3.1.1 "><p id="p9641944123515"><a name="p9641944123515"></a><a name="p9641944123515"></a>同步落盘</p>
