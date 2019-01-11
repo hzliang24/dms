@@ -31,15 +31,13 @@
 
 3.  下载开源的Kafka客户端。
 
-    对应0.10.2\_plus版本实例的下载地址：[https://archive.apache.org/dist/kafka/0.10.2.0/kafka\_2.11-0.10.2.0.tgz](https://archive.apache.org/dist/kafka/0.10.2.0/kafka_2.11-0.10.2.0.tgz)
+    对应1.1.0版本实例的下载地址：[https://archive.apache.org/dist/kafka/1.1.0/kafka\_2.11-1.1.0.tgz](https://archive.apache.org/dist/kafka/1.1.0/kafka_2.11-1.1.0.tgz)
 
-    对应1.1.0版本实例的下载地址：[http://mirrors.tuna.tsinghua.edu.cn/apache/kafka/1.1.0/kafka\_2.11-1.1.0.tgz](http://mirrors.tuna.tsinghua.edu.cn/apache/kafka/1.1.0/kafka_2.11-1.1.0.tgz)
-
-4.  解压Kafka客户端文件，下面以0.10.2.0版本为例。
+4.  解压Kafka客户端文件，下面以1.1.0版本为例。
 
     **tar -zxf  _\[kafka\_tar\]_**
 
-5.  进入\[base\_dir\]/kafka\_2.11-0.10.2.0/bin目录下。
+5.  进入\[base\_dir\]/kafka\_2.11-1.1.0/bin目录下。
 6.  执行如下命令进行生产消息。
 
     **_./kafka-console-producer.sh --broker-list \[连接地址\] --topic \[Topic名称\]_**
@@ -51,7 +49,7 @@
     **图 1**  Kafka专享版生产消息<a name="fig1125032512301"></a>  
     ![](figures/Kafka专享版生产消息.png "Kafka专享版生产消息")
 
-    如需停止生产使用Ctrl+C命令退出。
+    如需停止生产使用**Ctrl+C**命令退出。
 
 7.  执行如下命令消费消息。
 
@@ -62,6 +60,6 @@
     **图 2**  Kafka专享版消费消息<a name="fig16636329305"></a>  
     ![](figures/Kafka专享版消费消息.png "Kafka专享版消费消息")
 
-    如需停止消费使用Ctrl+C命令退出。
+    如需停止消费使用**Ctrl+C命令退出。**
 
 

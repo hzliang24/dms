@@ -46,11 +46,9 @@
 
 4.  下载开源的Kafka客户端。
 
-    对应0.10.2\_plus版本实例的下载地址：[https://archive.apache.org/dist/kafka/0.10.2.0/kafka\_2.11-0.10.2.0.tgz](https://archive.apache.org/dist/kafka/0.10.2.0/kafka_2.11-0.10.2.0.tgz)
+    1.1.0版本实例的下载地址：[https://archive.apache.org/dist/kafka/1.1.0/kafka\_2.11-1.1.0.tgz](https://archive.apache.org/dist/kafka/1.1.0/kafka_2.11-1.1.0.tgz)
 
-    对应1.1.0版本实例的下载地址：[http://mirrors.tuna.tsinghua.edu.cn/apache/kafka/1.1.0/kafka\_2.11-1.1.0.tgz](http://mirrors.tuna.tsinghua.edu.cn/apache/kafka/1.1.0/kafka_2.11-1.1.0.tgz)
-
-5.  解压Kafka客户端文件，下面以0.10.2.0版本为例。
+5.  解压Kafka客户端文件，下面以1.1.0版本为例。
 
     **tar -zxf  _\[kafka\_tar\]_**
 
@@ -64,12 +62,12 @@
     
     security.protocol=SASL_SSL
     ssl.truststore.location=/opt/kafka_2.11-1.1.0/config/client.truststore.jks
-    ssl.truststore.password=********
+    ssl.truststore.password=dms@kafka
     ```
 
     说明：其中username和password为创建Kafka专享实例时开启SASL\_SSL时填入的账户和密码， ssl.trustore.location配置为证书的存放路径。
 
-7.  进入\[base\_dir\]/kafka\_2.11-0.10.2.0/bin目录下。
+7.  进入“\[base\_dir\]/kafka\_2.11-1.1.0/bin”目录下。
 8.  执行如下命令进行生产消息。
 
     **./kafka-console-producer.sh --broker-list \[连接地址\] --topic \[Topic名称\] --producer.config ../config/producer.properties**
@@ -81,7 +79,7 @@
     **图 1**  生产消息<a name="fig174635218315"></a>  
     ![](figures/生产消息.png "生产消息")
 
-    如需停止生产使用Ctrl+C命令退出。
+    如需停止生产使用**Ctrl+C**命令退出。
 
 9.  执行如下命令消费消息。
 
@@ -92,6 +90,6 @@
     **图 2**  消费消息<a name="fig161838173112"></a>  
     ![](figures/消费消息.png "消费消息")
 
-    如需停止消费使用Ctrl+C命令退出。
+    如需停止消费使用**Ctrl+C**命令退出。
 
 
