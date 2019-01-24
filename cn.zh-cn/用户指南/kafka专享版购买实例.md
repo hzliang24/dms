@@ -88,6 +88,14 @@ Kafka专享版实例运行于虚拟私有云，购买实例前，需保证有可
     </div></div>
     </td>
     </tr>
+    <tr id="row9846547161913"><td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.3.1.1 "><p id="p1384854771912"><a name="p1384854771912"></a><a name="p1384854771912"></a>转储</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="83%" headers="mcps1.2.3.1.2 "><p id="p108061438152114"><a name="p108061438152114"></a><a name="p108061438152114"></a>开启或关闭转储。</p>
+    <p id="p1848154791918"><a name="p1848154791918"></a><a name="p1848154791918"></a>通过开启转储将数据转储至OBS桶，实现数据的备份。</p>
+    <div class="note" id="note16224183392310"><a name="note16224183392310"></a><a name="note16224183392310"></a><span class="notetitle"> 说明： </span><div class="notebody"><a name="ul1644912984811"></a><a name="ul1644912984811"></a><ul id="ul1644912984811"><li>消息包含消息属性（由属性名及属性值组成，以K-V的形式体现）时，属性名key不支持转储，属性值value支持转储。</li><li>当前开启转储后，暂不支持关闭转储。</li></ul>
+    </div></div>
+    </td>
+    </tr>
     <tr id="row3119715618728"><td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.3.1.1 "><p id="p5533269218728"><a name="p5533269218728"></a><a name="p5533269218728"></a>虚拟私有云</p>
     </td>
     <td class="cellrowborder" valign="top" width="83%" headers="mcps1.2.3.1.2 "><p id="p5276310218728"><a name="p5276310218728"></a><a name="p5276310218728"></a>已创建的虚拟私有云。</p>
@@ -129,7 +137,7 @@ Kafka专享版实例运行于虚拟私有云，购买实例前，需保证有可
     <tr id="row175574015417"><td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.3.1.1 "><p id="p185589055411"><a name="p185589055411"></a><a name="p185589055411"></a>时间窗</p>
     </td>
     <td class="cellrowborder" valign="top" width="83%" headers="mcps1.2.3.1.2 "><p id="p2558130125418"><a name="p2558130125418"></a><a name="p2558130125418"></a>运维操作时间。</p>
-    <p id="p13571145282612"><a name="p13571145282612"></a><a name="p13571145282612"></a>在这个时间段内，华为运维人员可以对该实例的节点进行维护操作。维护期间，业务可以正常使用，可能会发生闪断。维护操作通常几个月一次。</p>
+    <p id="p13571145282612"><a name="p13571145282612"></a><a name="p13571145282612"></a>在这个时间段内，运维人员可以对该实例的节点进行维护操作。维护期间，业务可以正常使用，可能会发生闪断。维护操作通常几个月一次。</p>
     <p id="p538867566"><a name="p538867566"></a><a name="p538867566"></a>用户可选择22:00-02:00、02:00-06:00、06:00-10:00、10:00-14:00、14:00-18:00和18:00-22:00，在选择的时间段内，服务运维可对实例节点进行维护操作。</p>
     </td>
     </tr>

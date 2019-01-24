@@ -21,13 +21,9 @@
 
 1.  下载client.truststore.jks证书。
 
-    下载地址：[http://static.huaweicloud.com/upload/files/dms/dmskafkasasl.zip](http://static.huaweicloud.com/upload/files/dms/dmskafkasasl.zip)，下载压缩包后解压，目录如下：
+    下载地址：[http://static.huaweicloud.com/upload/files/dms/dmskafkasasl.zip](http://static.huaweicloud.com/upload/files/dms/dmskafkasasl.zip)，下载压缩包后解压，获取压缩包中的客户端证书文件：client.truststore.jks。
 
-    -   client.truststore.jks：客户端证书
-    -   dms.kafka.sasl.client-1.0.0.jar： SASL包
-    -   dms\_kafka\_client\_jaas.conf：客户端配置文件
-
-2.  登录弹性云服务器。
+2.  登录弹性云服务器，配置Kafka客户端环境。
 
     >![](public_sys-resources/icon-note.gif) **说明：**   
     >弹性云服务器必须与Kafka专享实例处于相同VPC、子网与安全组。  
@@ -52,7 +48,7 @@
 
     **tar -zxf  _\[kafka\_tar\]_**
 
-6.  在consumer.properties/producer.properties文件中增加如下行：
+6.  在consumer.properties和producer.properties文件中增加如下行：
 
     ```
     sasl.jaas.config=org.apache.kafka.common.security.plain.PlainLoginModule required \
@@ -65,7 +61,7 @@
     ssl.truststore.password=dms@kafka
     ```
 
-    说明：其中username和password为创建Kafka专享实例时开启SASL\_SSL时填入的账户和密码， ssl.trustore.location配置为证书的存放路径。
+    说明：其中username和password为创建Kafka专享实例时开启SASL\_SSL时填入的用户名和密码， ssl.trustore.location配置为证书的存放路径。
 
 7.  进入“\[base\_dir\]/kafka\_2.11-1.1.0/bin”目录下。
 8.  执行如下命令进行生产消息。

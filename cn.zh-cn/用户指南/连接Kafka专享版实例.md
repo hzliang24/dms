@@ -12,7 +12,7 @@
 
 ## 命令行模式连接实例<a name="section189213202426"></a>
 
-1.  登录弹性云服务器。
+1.  登录Linux系统的弹性云服务器。
 
     >![](public_sys-resources/icon-note.gif) **说明：**   
     >弹性云服务器必须与Kafka专享实例处于相同VPC、子网与安全组。  
