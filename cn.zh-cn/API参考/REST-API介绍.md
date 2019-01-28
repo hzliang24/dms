@@ -169,10 +169,10 @@ HTTP方法（也称为操作或动词），它告诉服务你正在请求什么�
 <td class="cellrowborder" valign="top" width="29.14%" headers="mcps1.2.5.1.4 "><p id="p62666305193342"><a name="p62666305193342"></a><a name="p62666305193342"></a>3495</p>
 </td>
 </tr>
-<tr id="row7694113117515"><td class="cellrowborder" valign="top" width="17.48%" headers="mcps1.2.5.1.1 "><p id="p7695123118516"><a name="p7695123118516"></a><a name="p7695123118516"></a><span id="ph9940161712383"><a name="ph9940161712383"></a><a name="ph9940161712383"></a>x</span>-project-id</p>
+<tr id="row7694113117515"><td class="cellrowborder" valign="top" width="17.48%" headers="mcps1.2.5.1.1 "><p id="p7695123118516"><a name="p7695123118516"></a><a name="p7695123118516"></a>x-project-id</p>
 </td>
 <td class="cellrowborder" valign="top" width="32.519999999999996%" headers="mcps1.2.5.1.2 "><p id="p3695531255"><a name="p3695531255"></a><a name="p3695531255"></a>用户当前使用的Project ID。</p>
-<p id="p196681938263"><a name="p196681938263"></a><a name="p196681938263"></a><span id="ph14163174393713"><a name="ph14163174393713"></a><a name="ph14163174393713"></a>使用AK/SK认证多项目时必选。</span></p>
+<p id="p196681938263"><a name="p196681938263"></a><a name="p196681938263"></a>使用AK/SK认证多项目时必选。</p>
 </td>
 <td class="cellrowborder" valign="top" width="20.86%" headers="mcps1.2.5.1.3 "><p id="p4668638267"><a name="p4668638267"></a><a name="p4668638267"></a>否</p>
 </td>
@@ -185,7 +185,7 @@ HTTP方法（也称为操作或动词），它告诉服务你正在请求什么�
 >![](public_sys-resources/icon-notice.gif) **注意：**   
 >如果使用多项目（多Project）时，http头部消息中必须含有x-project-id字段，此字段需要自行添加。以AK/SK认证为例，添加方法如下：  
 >1.  参考[获取项目ID](获取项目ID.md)查询到多项目的ID。  
->2.  在AccessServiceImpl.java中的调用signer.sign\(\)方法后面添加一行代码，参数值请填写实际的project id，具体位置参考[3.c.ii](获取请求认证.md#li22657210162236)：  
+>2.  在AccessServiceImpl.java中的调用signer.sign\(\)方法后面添加一行代码，参数值请填写实际的project id，具体位置参考[4.a](AK-SK认证.md#li14378310161713)：  
 >    request.addHeader\("x-project-id", "20cf5fb8035543049a80906a6652fed2"\);  
 >如上，即可完成多项目下的AK/SK认证，否则可能报错。  
 
