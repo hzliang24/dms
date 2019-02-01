@@ -40,14 +40,14 @@ Kafka专享版实例运行于虚拟私有云，购买实例前，需保证有可
     <td class="cellrowborder" valign="top" width="83%" headers="mcps1.2.3.1.2 "><p id="p19550438172515"><a name="p19550438172515"></a><a name="p19550438172515"></a>选择付费方式。</p>
     </td>
     </tr>
-    <tr id="row153681361123"><td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.3.1.1 "><p id="p53681836827"><a name="p53681836827"></a><a name="p53681836827"></a>当前区域</p>
+    <tr id="row153681361123"><td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.3.1.1 "><p id="p53681836827"><a name="p53681836827"></a><a name="p53681836827"></a>区域</p>
     </td>
     <td class="cellrowborder" valign="top" width="83%" headers="mcps1.2.3.1.2 "><p id="p183684366219"><a name="p183684366219"></a><a name="p183684366219"></a>DMS服务所在区域，可在页面左上角切换区域。</p>
     </td>
     </tr>
     <tr id="row113682295213"><td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.3.1.1 "><p id="p4866108918728"><a name="p4866108918728"></a><a name="p4866108918728"></a>可用区</p>
     </td>
-    <td class="cellrowborder" valign="top" width="83%" headers="mcps1.2.3.1.2 "><p id="p4923409718728"><a name="p4923409718728"></a><a name="p4923409718728"></a>选择可用分区。</p>
+    <td class="cellrowborder" valign="top" width="83%" headers="mcps1.2.3.1.2 "><p id="p4923409718728"><a name="p4923409718728"></a><a name="p4923409718728"></a>选择可用区。</p>
     </td>
     </tr>
     <tr id="row5850290918728"><td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.3.1.1 "><p id="p4116798118728"><a name="p4116798118728"></a><a name="p4116798118728"></a>实例名称</p>
@@ -113,10 +113,26 @@ Kafka专享版实例运行于虚拟私有云，购买实例前，需保证有可
     <p id="p35999277569"><a name="p35999277569"></a><a name="p35999277569"></a>安全组是一组对弹性云服务器的访问规则的集合，为同一个VPC内具有相同安全保护需求并相互信任的弹性云服务器提供访问策略。</p>
     </td>
     </tr>
-    <tr id="row597018101248"><td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.3.1.1 "><p id="p1021123020242"><a name="p1021123020242"></a><a name="p1021123020242"></a>SSL</p>
+    <tr id="row424241112814"><td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.3.1.1 "><p id="p92424118280"><a name="p92424118280"></a><a name="p92424118280"></a>容量阈值策略</p>
     </td>
-    <td class="cellrowborder" valign="top" width="83%" headers="mcps1.2.3.1.2 "><p id="p19919154792416"><a name="p19919154792416"></a><a name="p19919154792416"></a>客户端链接实例时SSL认证的开关。</p>
-    <p id="p1092024722415"><a name="p1092024722415"></a><a name="p1092024722415"></a>开启SSL，则数据加密传输，安全性更高。</p>
+    <td class="cellrowborder" valign="top" width="83%" headers="mcps1.2.3.1.2 "><p id="p9233161615436"><a name="p9233161615436"></a><a name="p9233161615436"></a>磁盘的容量到达容量阈值后，对于消息的处理策略。</p>
+    <a name="ul62291616154311"></a><a name="ul62291616154311"></a><ul id="ul62291616154311"><li>生产受限：无法继续生产消息，但可以继续消费消息。</li><li>自动删除：可以正常生产和消费消息，但是会删除最早的10%的消息，以保证磁盘容量充足。</li></ul>
+    </td>
+    </tr>
+    <tr id="row1159324342816"><td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.3.1.1 "><p id="p25951843182810"><a name="p25951843182810"></a><a name="p25951843182810"></a>Manager用户名</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="83%" headers="mcps1.2.3.1.2 "><p id="p1459594310287"><a name="p1459594310287"></a><a name="p1459594310287"></a>登录Kafka Manager的用户名。</p>
+    </td>
+    </tr>
+    <tr id="row1570884519282"><td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.3.1.1 "><p id="p770834519288"><a name="p770834519288"></a><a name="p770834519288"></a>密码</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="83%" headers="mcps1.2.3.1.2 "><p id="p12708164582815"><a name="p12708164582815"></a><a name="p12708164582815"></a>登录Kafka Manager的密码。</p>
+    </td>
+    </tr>
+    <tr id="row597018101248"><td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.3.1.1 "><p id="p1021123020242"><a name="p1021123020242"></a><a name="p1021123020242"></a>Kafka SASL_SSL</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="83%" headers="mcps1.2.3.1.2 "><p id="p19919154792416"><a name="p19919154792416"></a><a name="p19919154792416"></a>客户端连接实例时SSL认证的开关。</p>
+    <p id="p1092024722415"><a name="p1092024722415"></a><a name="p1092024722415"></a>开启Kafka SASL_SSL，则数据加密传输，安全性更高。</p>
     </td>
     </tr>
     <tr id="row44819143245"><td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.3.1.1 "><p id="p7637135516373"><a name="p7637135516373"></a><a name="p7637135516373"></a>用户名</p>
@@ -134,7 +150,7 @@ Kafka专享版实例运行于虚拟私有云，购买实例前，需保证有可
     </li></ul>
     </td>
     </tr>
-    <tr id="row175574015417"><td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.3.1.1 "><p id="p185589055411"><a name="p185589055411"></a><a name="p185589055411"></a>时间窗</p>
+    <tr id="row175574015417"><td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.3.1.1 "><p id="p185589055411"><a name="p185589055411"></a><a name="p185589055411"></a>维护时间窗</p>
     </td>
     <td class="cellrowborder" valign="top" width="83%" headers="mcps1.2.3.1.2 "><p id="p2558130125418"><a name="p2558130125418"></a><a name="p2558130125418"></a>运维操作时间。</p>
     <p id="p13571145282612"><a name="p13571145282612"></a><a name="p13571145282612"></a>在这个时间段内，运维人员可以对该实例的节点进行维护操作。维护期间，业务可以正常使用，可能会发生闪断。维护操作通常几个月一次。</p>
